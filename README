@@ -1,0 +1,25 @@
+Takes a list of song names and artist and creates a spotify playlist.
+
+Requires spotipy, which you can get here:
+http://spotipy.readthedocs.io/en/latest/#
+The output comes in a playlist called Parse2Playlist
+Follow instructions in shell and read comments in code!
+
+Remember to insert your information where comments indicate
+These variables needs to be changed:
+SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, username
+Max songs added per run is 100. (Spotify API limit)
+
+
+Usage:
+$ python JsonToPlaylist.py 'nameoffile' [offset]
+
+Offset is optional and for when you have a file with over 100 entries which needs several runs.
+E.G: First run is 0->99, then you set offset = 100, and it will grab 100->end
+
+File should be Json or txt, formatted like this:
+songname, artist
+songname, artist
+...
+
+Do manual cleanup in working directory after use - it creates some cache!
