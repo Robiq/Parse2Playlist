@@ -8,6 +8,8 @@ Follow instructions in shell and read comments in code!
 Remember to insert your information where comments indicate
 These variables needs to be changed:
 SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, username
+To clarify: the id's need to be grabbed from:
+https://developer.spotify.com/my-applications/
 Max songs added per run is 100. (Spotify API limit)
 
 
